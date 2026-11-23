@@ -85,9 +85,10 @@
     if (!ok) { const bad = Object.values(fields).find(f => f.el.getAttribute('aria-invalid') === 'true'); bad && bad.el.focus(); return; }
     const plan = (form.querySelector('input[name="plan"]:checked') || {}).value || 'Não';
     const msg = [
-      'Olá! Gostaria de agendar uma avaliação na Odontoarte.',
+      'Olá, vim do site e gostaria de mais informações!',
+      '',
       `Nome: ${fields.name.el.value.trim()}`,
-      `WhatsApp: ${phoneEl.value}`,
+      `Telefone: ${phoneEl.value}`,
       `Tratamento: ${fields.type.el.value}`,
       `Possui plano odontológico: ${plan}`
     ].join('\n');
