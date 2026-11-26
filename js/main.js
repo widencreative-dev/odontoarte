@@ -56,7 +56,7 @@
   const fields = {
     name: { el: $('#f-name'), err: $('#e-name'), check: v => v.trim().length >= 2 || 'Informe seu nome.' },
     phone: { el: $('#f-phone'), err: $('#e-phone'), check: v => v.replace(/\D/g, '').length >= 10 || 'Informe DDD + número.' },
-    type: { el: $('#f-type'), err: $('#e-type'), check: v => !!v || 'Escolha um tratamento.' }
+    type: { el: $('#f-type'), err: $('#e-type'), check: v => !!v || 'Escolha uma opção.' }
   };
   const phoneEl = fields.phone.el;
   phoneEl.addEventListener('input', () => {
